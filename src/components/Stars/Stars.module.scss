@@ -1,0 +1,28 @@
+.stars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1px;
+
+  .star {
+    font-size: 24px;
+    color: lightgray;
+    cursor: pointer;
+
+    &.active {
+      color: gold;
+    }
+  }
+
+  .label {
+    margin-left: 12px;
+    font-size: 14px;
+    color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+}
